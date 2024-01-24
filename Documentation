@@ -21,9 +21,8 @@ The Fake News Detection System is designed to identify and classify textual cont
 2. Dependencies <a name="dependencies"></a>
 Ensure you have the following libraries installed:
 
-bash
-Copy code
 pip install numpy pandas matplotlib seaborn nltk wordcloud tensorflow scikit-learn gensim
+
 3. Dataset <a name="dataset"></a>
 The system uses two datasets:
 
