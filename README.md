@@ -5,6 +5,7 @@ Overview
 This repository contains the code for a Fake News Detection System implemented in TensorFlow. The system utilizes deep learning techniques, including LSTM layers, to analyze textual content and classify information accuracy. The model demonstrates strong performance in distinguishing between authentic news and misinformation.
 
 Key Features
+
 TensorFlow-based implementation
 Sequential text analysis using LSTM layers
 Robust model validation for high precision
@@ -24,6 +25,7 @@ Evaluate the model's performance using accuracy, precision, recall, and F1-score
 Optionally, experiment with model improvement strategies.
 
 Files and Directories
+
 fake_news_detection.ipynb: Jupyter Notebook containing the complete code for the Fake News Detection System.
 
 model.png: Visualization of the model architecture.
