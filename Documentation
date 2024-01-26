@@ -1,61 +1,61 @@
-Fake News Detection System Documentation
-Overview
+# Fake News Detection System Documentation
+
+## Overview
+
 This documentation provides a detailed explanation of the Fake News Detection System implemented in TensorFlow. The system uses deep learning techniques to analyze textual content and classify information accuracy, specifically focusing on distinguishing between authentic news and misinformation.
 
-Table of Contents
-Introduction
-Dependencies
-Dataset
-Data Exploration
-Text Processing
-Model Architecture
-Training
-Evaluation
-Model Improvement
-File Structure
-License
-Acknowledgments
-1. Introduction <a name="introduction"></a>
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Dependencies](#dependencies)
+3. [Dataset](#dataset)
+4. [Data Exploration](#data-exploration)
+5. [Text Processing](#text-processing)
+6. [Model Architecture](#model-architecture)
+7. [Training](#training)
+8. [Evaluation](#evaluation)
+9. [Model Improvement](#model-improvement)
+10. [File Structure](#file-structure)
+11. [License](#license)
+12. [Acknowledgments](#acknowledgments)
+
+1. Introduction
+
 The Fake News Detection System is designed to identify and classify textual content as either authentic or fake news using a deep learning model implemented in TensorFlow. The model utilizes LSTM layers for sequential text analysis, aiming to achieve high precision in its classification.
 
-2. Dependencies <a name="dependencies"></a>
+2. Dependencies
+
 Ensure you have the following libraries installed:
 
 pip install numpy pandas matplotlib seaborn nltk wordcloud tensorflow scikit-learn gensim
 
-3. Dataset <a name="dataset"></a>
+3. Dataset
 The system uses two datasets:
 
 True.csv: Dataset containing authentic news articles.
 Fake.csv: Dataset containing misinformation or fake news articles.
-4. Data Exploration <a name="data-exploration"></a>
+4. Data Exploration
 Explore the datasets to understand their structure, examine null values, and visualize the distribution of news subjects using Matplotlib and Seaborn.
 
-5. Text Processing <a name="text-processing"></a>
+5. Text Processing
 Perform text processing steps, including the extraction of publishers from the 'text' column, handling missing values, and combining title and text columns. Convert text to lowercase and create a target variable ('isFake').
 
-6. Model Architecture <a name="model-architecture"></a>
+6. Model Architecture
 The model architecture consists of three key components:
 
 Embedding Layer: Converts words into dense vectors.
 LSTM Layer: Processes sequential information in the text.
 Dense Layer: Produces binary output for real (0) or fake (1) news classification.
-7. Training <a name="training"></a>
+7. Training
 Split the data into training and validation sets. Train the model using the defined architecture and evaluate its performance on the validation set.
 
-8. Evaluation <a name="evaluation"></a>
+8. Evaluation
 Evaluate the model's performance using metrics such as accuracy, precision, recall, and F1-score. Optionally, experiment with model improvement strategies.
 
-9. Model Improvement <a name="model-improvement"></a>
+9. Model Improvement
 Explore model improvement strategies, such as adding dropout regularization to the LSTM layer, to enhance performance.
 
-10. File Structure <a name="file-structure"></a>
+10. File Structure
 fake_news_detection.ipynb: Jupyter Notebook containing the complete code.
 model.png: Visualization of the model architecture.
 True.csv and Fake.csv: Datasets used for training and testing.
-11. License <a name="license"></a>
-This project is licensed under the MIT License. Refer to the LICENSE file for details.
-
-12. Acknowledgments <a name="acknowledgments"></a>
-The code relies on TensorFlow, scikit-learn, and other open-source libraries.
-Datasets are sourced from publicly available repositories.
